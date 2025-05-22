@@ -3,7 +3,9 @@ permissions: write-all
 on:
   repository_dispatch:
   workflow_dispatch:
-
+  push:
+    tags:
+      - "v*.*.*"
 jobs:
   build:
     name: build immortalwrt for tr3000
