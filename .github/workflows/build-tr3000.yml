@@ -1,9 +1,8 @@
 name: Main
 permissions: write-all
 on:
-  push:
-    tags:
-      - "v*.*.*"
+  repository_dispatch:
+  workflow_dispatch:
 
 jobs:
   build:
